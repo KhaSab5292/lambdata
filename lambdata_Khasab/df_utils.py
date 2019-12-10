@@ -2,11 +2,11 @@
 utililty functions for working with Dataframes
 """
 
-import pandas 
-import numpy
+import pandas as pd
+import numpy as np
 from sklearn.model_selection import train_test_split
 
-TEST_DF = pandas.DataFrame([1,2,3,4,5])
+TEST_DF = pd.DataFrame([1,2,3,4,5])
 
 def null_check(df):
     null_table = df.isnull().sum()
