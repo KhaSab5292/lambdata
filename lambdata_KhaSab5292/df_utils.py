@@ -28,3 +28,23 @@ def find_seconds(d, h, m, s):
     Returns total number of seconds."""
     seconds = 86400*d + 3600*h + 60*m + s
     return seconds
+
+class Grade:
+    def __init__(self, number=50):
+        self.number = number
+        
+    def letter(self):
+        percent = self.number/100
+        if percent > 100:
+            return "Not possible"
+        elif percent >= 90:
+            return "A"
+        elif percent >= 80:
+            return "B"
+        elif percent >= 70:
+            return "C"
+        elif percent >= 60:
+            return "D"
+        else:
+            return "F"
+    
