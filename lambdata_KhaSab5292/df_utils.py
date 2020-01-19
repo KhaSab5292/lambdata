@@ -35,15 +35,15 @@ class Grade:
         
     def letter(self):
         percent = self.number/100
-        if percent > 100:
+        if percent > 1:
             return "Not possible"
-        elif percent >= 90:
+        elif percent >= .9:
             return "A"
-        elif percent >= 80:
+        elif percent >= .8:
             return "B"
-        elif percent >= 70:
+        elif percent >= .7:
             return "C"
-        elif percent >= 60:
+        elif percent >= .6:
             return "D"
         else:
             return "F"
